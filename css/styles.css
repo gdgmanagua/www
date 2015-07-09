@@ -216,21 +216,22 @@ a img{
 
   .android-create-character a {
     text-decoration: none;
-    color: #767777;
+    color: #FAFAFA;
     font-weight: 300;
   }
 
 .android-screen-section {
   position: relative;
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .android-screens {
-  text-align: right;
-  width: 100%;
-  white-space: nowrap;
-  overflow-x: auto;
+  width: 80%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
 }
 
 .android-screen {
@@ -370,24 +371,43 @@ a img{
   }
 
 .android-customized-section {
-  text-align: center;
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .android-customized-section-text {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 80px 16px 0 16px;
+  margin-left: 12px;
+  padding-bottom: 24px;
 }
 
   .android-customized-section-text p {
     padding-top: 16px;
   }
 
-.android-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
-  background-size: cover;
-  height: 400px;
+.demo-card-square.mdl-card {
+  height: 320px;
+}
+
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../images/dog.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.gdg-member-section {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+.gdg-member-section > .gdg-member-section-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
 }
 
 .android-more-section {
@@ -441,6 +461,12 @@ a img{
     font-size: 16px;
   }
 
+.gdg-contact-section {
+  position: relative;
+  background: url('../images/event.jpg') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
 .android-footer {
   background-color: #fafafa;
   position: relative;
