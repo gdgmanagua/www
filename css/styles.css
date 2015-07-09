@@ -17,8 +17,8 @@
 @font-face {
   font-family: "And Black";
   src: url("myfont-webfont.eot?#iefix") format('embedded-opentype'),
-       url("fonts/and_black.woff") format('woff'),
-       url("fonts/and_black.ttf") format('truetype');
+       url("../fonts/and_black.woff") format('woff'),
+       url("../fonts/and_black.ttf") format('truetype');
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 
 /* Disable ugly boxes around images in IE10 */
 a img{
-  border: 0px;
+  border: 0;
 }
 
 ::-moz-selection {
@@ -188,14 +188,14 @@ a img{
   height: 800px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('images/slide01.jpg') center 30% no-repeat;
+  background: url('../images/gdg.jpg') center 30% no-repeat;
   background-size: cover;
 }
 
 .android-font {
   font-family: 'And Black', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
-  color: #767777;
+  color: #FAFAFA;
   font-weight: 300;
 }
 
@@ -315,7 +315,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
+  background: url('../images/event.jpg') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
