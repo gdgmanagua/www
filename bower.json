@@ -1,11 +1,11 @@
 {
-  "name": "material-design-lite",
+  "name": "gdgmanagua.org",
   "version": "1.0.0",
-  "homepage": "https://github.com/google/material-design-lite",
+  "homepage": "https://github.com/gdg-managua/gdg-managua.github.io",
   "authors": [
     "Material Design Lite team"
   ],
-  "description": "Material Design Components in CSS, JS and HTML",
+  "description": "Website for the GDG Managua",
   "main": [
     "material.min.css",
     "material.min.js"
