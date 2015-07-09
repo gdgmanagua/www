@@ -1,11 +1,11 @@
 {
-  "name": "material-design-lite",
+  "name": "gdgmanagua.org",
   "version": "1.0.0",
-  "description": "Material Design Components in CSS, JS and HTML",
+  "description": "Website for the GDG Managua",
   "private": true,
   "license": "Apache-2.0",
-  "author": "Google",
-  "repository": "google/material-design-lite",
+  "author": "GDG Managua",
+  "repository": "gdg-managua/gdgmanagua.github.io",
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "browser-sync": "^2.2.3",
