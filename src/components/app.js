@@ -1,12 +1,6 @@
 import { h, Component } from "preact";
-import { Router } from "preact-router";
 
-import Header from "./header";
 import Intro from "./intro";
-import Home from "../routes/home";
-import Profile from "../routes/profile";
-// import Home from 'async!../routes/home';
-// import Profile from 'async!../routes/profile';
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -19,9 +13,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <div id="app">
+      <main id="app">
         <Intro />
-      </div>
+      </main>
     );
   }
 }
