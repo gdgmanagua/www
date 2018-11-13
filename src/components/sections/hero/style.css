@@ -1,0 +1,43 @@
+.hero {
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/intro.jpg');
+}
+
+  .hero_wrap {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(34, 34, 37, 0.45);
+    z-index: 200;
+  }
+  .hero_wrap::after {
+    content: "";
+    background: -webkit-linear-gradient(#ff6471, #1b96ed), top;
+    background: linear-gradient(#ff6471, #1b96ed), top;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .75;
+  }
+
+  .hero_content {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+  }

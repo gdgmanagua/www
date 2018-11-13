@@ -1,5 +1,4 @@
 import { h, Component } from 'preact';
-import About from '../../sections/about/index.js';
 import LogoImg from '../../assets/logo.png';
 import style from './style.css';
 
