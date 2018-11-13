@@ -1,24 +1,23 @@
 import { Component } from 'preact';
-import { Card, Layout, Grid } from 'preact-fluid';
+import { Card, Layout, Grid, Cell, Image } from 'preact-fluid';
 import style from './style.css';
 
 export default class About extends Component {
   render() {
     return(
-      <div className="layout-example">
+      <section className={style.about}>
         <Grid columns={2}>
-        <Cell width={1}>
-           <Image
-               responsive={[
-                   {
-                       src: "",
-                       media: "(min-width: 320px)"
-                   }
-               ]}
-               placeholder=""
-               src=""
-           />
-        </Cell>
+          <Cell width={1}>
+            <Image responsive={[
+                    {
+                      src: "https://colorlib.com/preview/theme/cryptocurrency/img/about-img.png",
+                      media: "(min-width: 320px)"
+                    }
+                ]}
+                placeholder=""
+                src=""
+            />
+          </Cell>
         <Cell>
           The GDG platform is a membership level within the wider Google Developers Community Groups
           program and it offers tailored support to organizers of local GDG chapters.
@@ -29,7 +28,7 @@ export default class About extends Component {
           and tech talks, to hackathons.
         </Cell>
         </Grid>
-      </div>
+      </section>
     )
   }
 }
