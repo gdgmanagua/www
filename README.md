@@ -1,5 +1,7 @@
 # GDG Managua Website
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gdgmanagua/www.svg)](https://greenkeeper.io/)
+
 ## CLI Commands
 
 ``` bash
