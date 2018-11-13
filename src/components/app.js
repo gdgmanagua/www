@@ -15,6 +15,9 @@ export default class App extends Component {
     return (
       <main id="app">
         <Hero />
+        <section>
+          <h1>Probando</h1>
+        </section>
       </main>
     );
   }
