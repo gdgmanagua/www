@@ -41,3 +41,11 @@
     color: #fff;
     text-align: center;
   }
+
+  .hero_title {
+    font-size: 60px;
+  }
+
+  .hero_subtitle {
+    font-size: 40px;
+  }
