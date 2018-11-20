@@ -1,7 +1,6 @@
 import { Component } from 'preact'
 import style from './style.css'
 
-// import { Button } from 'preact-fluid';
 
 export default class Intro extends Component {
   render() {
