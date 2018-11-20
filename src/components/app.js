@@ -1,7 +1,6 @@
 import { Component } from 'preact';
 
-import Hero from './sections/hero';
-import About from './sections/about';
+import Intro from './sections/intro';
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -15,8 +14,10 @@ export default class App extends Component {
   render() {
     return (
       <main id="app">
-        <Hero />
-        <About />
+        <Intro />
+        <section>
+          <h1>Probando</h1>
+        </section>
       </main>
     );
   }
