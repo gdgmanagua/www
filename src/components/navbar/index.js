@@ -5,27 +5,37 @@ import LogoImg from '../../assets/logo.png';
 
 
 export default class NavBar extends Component {
+  doScrollIntoView = (e) => {
+    const view = e.currentTarget.dataset.view;
+    document.querySelector(`${view}`).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+
   render() {
     return (
       <nav className={`navbar is-transparent is-fixed-top ${style.navbar}`} role="navigation" aria-label="main navigation">
-        <div className="navbar-brand">
-          <a className="navbar-item" href="/">
-            <img src={LogoImg} alt="GDG Managua" width="112" height="28" />
-          </a>
-          <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        <div className="navbar-menu">
-          <div className="navbar-end">
-            <a className="navbar-item has-text-white" href="#about">Acerca</a>
-            <a className="navbar-item has-text-white" href="#sponsor">Patrocinadores</a>
-            <a className="navbar-item has-text-white" href="#event">Eventos</a>
-            <a className="navbar-item has-text-white" href="#contact">Contacto</a>
-            <div className="navbar-item">
-              <a className="button is-info is-inverted is-outlined is-rounded" href="#">Únete</a>
+        <div className="container">
+          <div className="navbar-brand">
+            <a className="navbar-item" href="/">
+              <img src={LogoImg} alt="GDG Managua" width="112" height="28" />
+            </a>
+            <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div className="navbar-menu">
+            <div className="navbar-end">
+              <a className="navbar-item has-text-white" href="#about">Acerca</a>
+              <a className="navbar-item has-text-white" href="#sponsor">Patrocinadores</a>
+              <a className="navbar-item has-text-white" href="#event">Eventos</a>
+              <a className="navbar-item has-text-white" href="#contact">Contacto</a>
+              <div className="navbar-item">
+                <a className="button is-white is-outlined is-rounded" href="#" data-view="#about" onClick={this.doScrollIntoView}>Únete</a>
+              </div>
             </div>
           </div>
         </div>

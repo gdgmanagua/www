@@ -5,7 +5,7 @@ import style from './style.css';
 export default class About extends Component {
   render() {
     return(
-      <section className={`section ${style.about}`}>
+      <section className={`section ${style.about}`} id="about">
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column">
