@@ -7,7 +7,7 @@ export default class About extends Component {
     return(
       <section className={`section ${style.about}`}>
         <div className="container">
-          <div className="columns">
+          <div className="columns is-vcentered">
             <div className="column">
               <figure className="image">
                 <img src="https://secure.meetupstatic.com/photos/event/8/8/e/e/600_471995054.jpeg" />
