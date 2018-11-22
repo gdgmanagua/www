@@ -10,7 +10,7 @@ export default class NavBar extends Component {
       <nav className={`navbar is-transparent is-fixed-top ${style.navbar}`} role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img src={LogoImg} alt="GDG Managua" width="112" height="28" />
+            <img src={LogoImg} alt="GDG Managua" width="160" />
           </a>
           <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
