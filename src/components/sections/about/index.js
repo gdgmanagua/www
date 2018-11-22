@@ -2,6 +2,7 @@ import { Component } from 'preact';
 import { Card, Layout, Grid, Cell, Image } from 'preact-fluid';
 import style from './style.css';
 
+
 export default class About extends Component {
   render() {
     return(
