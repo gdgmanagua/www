@@ -11,3 +11,16 @@
   width: 100%;
   font-family: 'Open Sans', sans-serif;
 }
+
+input[type="text"],
+input[type="email"],
+.textarea {
+    background: transparent;
+    border: 1px solid white;
+    color: #FFF;
+}
+
+input::placeholder,
+.textarea::placeholder {
+  color: #CACACA !important;
+}

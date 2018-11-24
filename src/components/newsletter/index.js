@@ -19,7 +19,7 @@ export default class NewsletterForm extends Component {
 
             <div className="field">
               <p className="control is-expanded has-icons-left has-icons-right">
-                <input className="input" type="email" placeholder="Correo" value="alex@smith.com" />
+                <input className="input" type="email" placeholder="Correo" />
                 <span className="icon is-small is-left">
                   <i className="fas fa-envelope"></i>
                 </span>

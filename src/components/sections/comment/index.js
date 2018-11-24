@@ -25,7 +25,7 @@ const COMMENTS_LIST = [
 export default class Comment extends Component {
   render() {
     return (
-      <section className="section">
+      <section className="section" id="comment" style="background-color: #81ecec">
         <div className="container">
           <div className="tile is-ancestor">
             {COMMENTS_LIST.map(comment => (
@@ -39,9 +39,9 @@ export default class Comment extends Component {
                     </div>
                     <div className="media-content">
                       <div className="content">
-                        <p>
+                        <p className="is-marginless">
                           <strong>{comment['author']}</strong>
-                          {' '}<small>@temporal</small>
+                          {' '}-{' '}<small>@temporal</small>
                         </p>
                         <p className="content">{comment['description']}</p>
                       </div>

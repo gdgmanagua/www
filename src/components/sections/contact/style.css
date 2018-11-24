@@ -6,3 +6,7 @@
 .contact_form {
   padding: 4rem;
 }
+
+.contact_image {
+  background-image: url(https://phandroid.s3.amazonaws.com/wp-content/uploads/2013/02/Google-Glass-Foundry-developers.jpeg);
+}
