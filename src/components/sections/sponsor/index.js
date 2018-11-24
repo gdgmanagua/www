@@ -1,10 +1,10 @@
 import { Component } from 'preact';
 import style from './style.css';
 
-import LogoGDG from '../../../assets/sponsors/gdg1.png';
-import LogoWTM from '../../../assets/sponsors/wtm1.png';
-import LogoRain from '../../../assets/sponsors/rain1.png';
-import LogoWaffle from '../../../assets/sponsors/waffle-studio1.png';
+import LogoGDG from '../../../assets/sponsors/gdg.png';
+import LogoWTM from '../../../assets/sponsors/wtm.png';
+import LogoRain from '../../../assets/sponsors/rain.png';
+import LogoWaffle from '../../../assets/sponsors/waffle-studio.png';
 
 const SponsorCard = (props) => {
   return (
