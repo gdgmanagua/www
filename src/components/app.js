@@ -5,6 +5,7 @@ import About from './sections/about'
 import Newsletter from './sections/newsletter'
 import Sponsor from './sections/sponsor'
 import Comment from './sections/comment'
+import Contact from './sections/contact'
 
 
 export default class App extends Component {
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Newsletter />
         <Sponsor />
         <Comment />
+        <Contact />
       </main>
     )
   }
