@@ -5,6 +5,7 @@ import LogoGDG from '../../../assets/sponsors/gdg.png';
 import LogoWTM from '../../../assets/sponsors/wtm.png';
 import LogoRain from '../../../assets/sponsors/rain.png';
 import LogoWaffle from '../../../assets/sponsors/waffle-studio.png';
+import LogoDefault from '../../../assets/sponsors/default.png';
 
 const SponsorCard = (props) => {
   return (
@@ -16,7 +17,7 @@ const SponsorCard = (props) => {
         <img className={style.sponsor_image} src={props.logo} alt={`Logo ${props.name}`} />
       </div>
       <footer className={style.sponsor_footer}>
-        <a target="_blank" href={props.website} class="card-footer-item">Sitio</a>
+        <a target="_blank" href={props.websiteUrl} className={style.sponsor_footer_link}>{props.websiteLabel}</a>
       </footer>
     </div>
   )
@@ -33,13 +34,15 @@ export default class Sponsor extends Component {
               <SponsorCard 
                 name="Google Developers"
                 logo={LogoGDG}
-                website="https://developers.google.com/" />
+                websiteUrl="https://developers.google.com/"
+                websiteLabel="developers.google.com" />
             </div>
             <div className="column">
               <SponsorCard 
                 name="Women Tech Makers"
                 logo={LogoWTM}
-                website="https://www.womentechmakers.com/" />
+                websiteUrl="https://www.womentechmakers.com/"
+                websiteLabel="www.womentechmakers.com" />
             </div>
           </div>
           <hr />
@@ -49,16 +52,30 @@ export default class Sponsor extends Component {
               <SponsorCard 
                 name="Rain Agency"
                 logo={LogoRain}
-                website="https://rain.agency/" />
+                websiteUrl="https://rain.agency/"
+                websiteLabel="rain.agency" />
             </div>
             <div className="column">
               <SponsorCard 
                 name="Waffle Studio"
                 logo={LogoWaffle}
-                website="https://www.waffle.studio/" />
+                websiteUrl="https://www.waffle.studio/"
+                websiteLabel="waffle.studio" />
+            </div>
+            <div className="column">
+              <div className={style.sponsor_card}>
+                <header className={style.sponsor_header}>
+                  <p className={style.sponsor_header_title}>Conviértete en Sponsor</p>
+                </header>
+                <div className={style.sponsor_content}>
+                  <img className={style.sponsor_image} src={LogoDefault} alt={`Logo Default`} />
+                </div>
+                <footer className={style.sponsor_footer}>
+                  <a href="#contact" className={style.sponsor_btn}>Quiero ser Sponsor!</a>
+                </footer>
+              </div>
             </div>
           </div>
-          <a href="#contact" className="button is-black is-outlined is-rounded">Colaborar</a>
         </div>
       </section>
     )
