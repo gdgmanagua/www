@@ -1,0 +1,32 @@
+.sponsor_card {
+  box-shadow: 0 8px 30px rgba(33, 54, 61, 0.15);
+}
+
+.sponsor_header {
+  border-bottom: 1px solid #eee;
+}
+
+.sponsor_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor_header_title {
+  color: #363636;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  padding: .75rem;
+}
+
+.sponsor_image {
+  max-width: 320px;
+}
+
+.sponsor_footer {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
