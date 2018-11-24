@@ -2,7 +2,7 @@ import { Component } from 'preact';
 
 import style from './style.css';
 import LogoImg from '../../assets/logo.png';
-
+import LogoWhite from '../../assets/logo-white.png';
 
 export default class NavBar extends Component {
   state = {
@@ -65,7 +65,7 @@ export default class NavBar extends Component {
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item" href="/">
-              <img src={LogoImg} alt="GDG Managua" width="160" />
+              <img src={this.state.isNavTransparent ? LogoWhite : LogoImg} alt="GDG Managua" width="160" />
             </a>
             <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
               <span aria-hidden="true"></span>
