@@ -24,3 +24,39 @@ input::placeholder,
 .textarea::placeholder {
   color: #CACACA !important;
 }
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+/* NavBar */
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar_not_transparent {
+  box-shadow: 0 4px 10px -8px rgba(0, 0, 0, 0.45);  
+}
+
+.navbar_transparent {
+  background-color: transparent;
+}
+
+/* About Section */
+.about {
+    background-color: #FFF;
+}
+
+/* Contact Form */
+.contact {
+  background-color: #222225;
+  color: #FFF;
+}
+
+.contact_form {
+  padding: 4rem;
+}
+
+.contact_image {
+  background-image: url(https://phandroid.s3.amazonaws.com/wp-content/uploads/2013/02/Google-Glass-Foundry-developers.jpeg);
+}

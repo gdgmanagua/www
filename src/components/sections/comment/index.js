@@ -1,5 +1,3 @@
-import { Component } from 'preact'
-import style from './style.css'
 
 const COMMENTS_LIST = [
   {
@@ -20,41 +18,39 @@ const COMMENTS_LIST = [
     'description': 'Siempre con temas bastante interesantes; explorando nuevas tecnologias.',
     'color': 'is-info',
   }
-]
+];
 
-export default class Comment extends Component {
-  render() {
-    return (
-      <section className="section" id="comment" style="background-color: #81ecec">
-        <div className="container">
-          <div className="tile is-ancestor">
-            {COMMENTS_LIST.map(comment => (
-              <div className="tile is-parent">
-                <article className={`tile is-child box notification ${comment['color']}`}>
-                  <div className="media">
-                    <div className="media-left">
-                      <figure className="image is-64x64">
-                        <img className="is-rounded" src={comment['image']} alt={comment['author']} />
-                      </figure>
-                    </div>
-                    <div className="media-content">
-                      <div className="content">
-                        <p className="is-marginless">
-                          <strong>{comment['author']}</strong>
-                          {' '}-{' '}<small>@temporal</small>
-                        </p>
-                        <p className="content">{comment['description']}</p>
-                      </div>
-                    </div>
-                  {/* <p class="title"></p>
-                   <p class="subtitle">What is up?</p> */}
+const Comment = () => (
+  <section className="section" id="comment" style="background-color: #81ecec">
+    <div className="container">
+      <div className="tile is-ancestor">
+        {COMMENTS_LIST.map(comment => (
+          <div className="tile is-parent">
+            <article className={`tile is-child box notification ${comment['color']}`}>
+              <div className="media">
+                <div className="media-left">
+                  <figure className="image is-64x64">
+                    <img className="is-rounded" src={comment['image']} alt={comment['author']} />
+                  </figure>
+                </div>
+                <div className="media-content">
+                  <div className="content">
+                    <p className="is-marginless">
+                      <strong>{comment['author']}</strong>
+                      {' '}-{' '}<small>@temporal</small>
+                    </p>
+                    <p className="content">{comment['description']}</p>
                   </div>
-                </article>
+                </div>
+              {/* <p class="title"></p>
+               <p class="subtitle">What is up?</p> */}
               </div>
-            ))}
+            </article>
           </div>
-        </div>
-      </section>
-    )
-  }
-}
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
+export default Comment;

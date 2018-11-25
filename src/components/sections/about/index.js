@@ -1,11 +1,18 @@
 import { Component } from 'preact';
-import style from './style.css';
-
+import Portal from 'preact-portal';
 
 export default class About extends Component {
+  state = {
+    open: false
+  }
+
+  open = () => this.setState({ open:true });
+
+  close = () => this.setState({ open:false });
+
   render() {
     return(
-      <section className={`section ${style.about}`} id="about">
+      <section className="section about" id="about">
         <div className="container">
           <div className="columns is-vcentered">
             <div className="column">
@@ -20,11 +27,22 @@ export default class About extends Component {
                 desde solo unas pocas personas que se reúnen para ver nuestros últimos videos, grandes reuniones con demostraciones y charlas tecnológicas, y hackathons.</p>
               <p className="has-text-justified">La plataforma <b>GDG</b> es un nivel de membresía dentro del programa más amplio de Grupos de la <i>Comunidad de Desarrolladores de Google</i> y
                 ofrece soporte personalizado para los organizadores de los capítulos locales de GDG.</p>
-              <button className="button is-black is-outlined is-rounded">Ver Más</button>
+              <button className="button is-black is-outlined is-rounded" onClick={this.open}>Ver Más</button>
             </div>
           </div>
         </div>
+        { this.state.open ? (
+          <Portal into="body">
+            <div className="modal is-active">
+              <div className="modal-background"></div>
+              <div className="modal-content">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/KlWVfEiW7Ak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+              </div>
+              <button className="modal-close is-large mt-40" aria-label="close" onClick={this.close}></button>
+            </div>
+          </Portal>
+        ) : null }
       </section>
     )
   }
-}
+};

@@ -1,6 +1,4 @@
 import { Component } from 'preact';
-
-import style from './style.css';
 import LogoImg from '../../assets/logo.png';
 import LogoWhite from '../../assets/logo-white.png';
 
@@ -61,7 +59,7 @@ export default class NavBar extends Component {
     const textColor = this.state.isNavTransparent ? 'has-text-white' : 'has-text-black';
     const buttonColor = this.state.isNavTransparent ? 'is-white' : 'is-black';
     return (
-      <nav className={`navbar ${(this.state.isNavTransparent) ? style.navbar_transparent : ''} is-transparent is-fixed-top ${style.navbar}`} role="navigation" aria-label="main navigation">
+      <nav className={`navbar ${(this.state.isNavTransparent) ? 'navbar_transparent' : 'navbar_not_transparent'} is-transparent is-fixed-top`} role="navigation" aria-label="main navigation">
         <div className="container">
           <div className="navbar-brand">
             <a className="navbar-item" href="/">
