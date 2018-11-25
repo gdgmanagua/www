@@ -35,7 +35,7 @@ input::placeholder,
 }
 
 .navbar_not_transparent {
-  box-shadow: 0 4px 10px -8px rgba(0, 0, 0, 0.45);  
+  box-shadow: 0 4px 10px -8px rgba(0, 0, 0, 0.45);
 }
 
 .navbar_transparent {

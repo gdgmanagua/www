@@ -22,7 +22,8 @@ const SponsorCard = (props) => (
 const Sponsor = () => (
   <section className="section">
     <div className="container">
-      <h1 class="title has-text-centered">Regional</h1>
+      <h1 className="title is-size-1 has-text-black has-text-centered">Nuestros Patrocinadores</h1>
+      <h2 class="title has-text-centered">Regional</h2>
       <div className="columns">
         <div className="column">
           <SponsorCard
@@ -40,7 +41,7 @@ const Sponsor = () => (
         </div>
       </div>
       <hr />
-      <h1 class="title has-text-centered">Local</h1>
+      <h2 class="title has-text-centered">Local</h2>
       <div className="columns">
         <div className="column">
           <SponsorCard

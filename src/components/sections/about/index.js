@@ -21,7 +21,7 @@ export default class About extends Component {
               </figure>
             </div>
             <div className="column content">
-              <h2 className="is-size-1 has-text-black has-text-centered">¿Que es un GDG?</h2>
+              <h1 className="title is-size-1 has-text-black has-text-centered">¿Que es un GDG?</h1>
               <p className="has-text-justified">Los <b>GDG</b> son grupos locales de desarrolladores que están específicamente interesados en los productos y las API de <b>Google</b>.</p>
               <p className="has-text-justified">Cada grupo local se denomina capítulo GDG y puede albergar una variedad de actividades técnicas para desarrolladores,
                 desde solo unas pocas personas que se reúnen para ver nuestros últimos videos, grandes reuniones con demostraciones y charlas tecnológicas, y hackathons.</p>

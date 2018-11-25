@@ -23,6 +23,7 @@ const COMMENTS_LIST = [
 const Comment = () => (
   <section className="section" id="comment" style="background-color: #81ecec">
     <div className="container">
+      <h1 className="title is-size-1 has-text-white has-text-centered">Que Dicen Sobre Nosotros</h1>
       <div className="tile is-ancestor">
         {COMMENTS_LIST.map(comment => (
           <div className="tile is-parent">
