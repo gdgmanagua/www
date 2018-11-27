@@ -5,6 +5,7 @@ import Sponsor from './sections/sponsor';
 import Comment from './sections/comment';
 import Event from './sections/event';
 import Contact from './sections/contact';
+import Social from './sections/Social';
 import Footer from './sections/footer';
 
 
@@ -16,6 +17,7 @@ const App = () => (
     <Sponsor />
     <Comment />
     <Event />
+    <Social />
     <Contact />
     <Footer />
   </main>
