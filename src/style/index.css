@@ -47,6 +47,59 @@ input::placeholder,
     background-color: #FFF;
 }
 
+/* Event Section */
+.event h1 {
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.event div {
+  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.timeline {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  left: 0;
+  top: -35px;
+  bottom: -34px;
+  background-color: #e7e7e7;
+}
+  .timeline > li {
+    margin-bottom: 35px;
+    margin-left: 20px;
+  }
+
+  .timeline--content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    /* top: 1px; */
+    width: 14px;
+    height: 14px;
+    background-color: #ddd;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px #ddd;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 100;
+    margin-left: -6px;
+    margin-top: 3px;
+    border-radius: 50%;
+  }
+
+
 /* Contact Form */
 .contact {
   background-color: #222225;
