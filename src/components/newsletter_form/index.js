@@ -35,7 +35,7 @@ export default class NewsletterForm extends Component {
               <h4 className="subtitle has-text-white has-text-centered">Esperamos verte pronto.</h4>
             </div>
         ) : (
-          <form onSubmit={this.submitForm}>
+          <form onSubmit={this.onSubmitForm}>
             <div className="field is-horizontal">
               <div className="field-body">
                 <div className="field">

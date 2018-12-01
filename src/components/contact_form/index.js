@@ -1,4 +1,5 @@
 import { Component } from 'preact'
+import fetch from 'unfetch'
 
 const encode = (data) => {
   return Object.keys(data)
@@ -36,7 +37,7 @@ export default class Contact extends Component {
             <h4 className="subtitle has-text-white">Pronto te contactaremos.</h4>
           </div>
         ) : (
-          <form name="contact" onSubmit={this.submitForm}>
+          <form name="contact" onSubmit={this.onSubmitForm}>
             <div className="field">
               <label className="label has-text-white">Nombre</label>
               <div className="control">
