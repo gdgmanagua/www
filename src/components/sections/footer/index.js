@@ -48,7 +48,7 @@ const Footer = () => (
         <strong className="has-text-white">GDG Managua</strong>
       </p>
       <p> <GitHub />{' '}<Meetup />{' '}<Facebook />{' '}<Twitter /> </p>
-      <p className="has-text-white">Contruido con{' '}<Heart />{' '}por <a href="https://www.waffle.studio" target="_blank" className="has-text-white">Waffle Studio</a></p>
+      <p className="has-text-white">Construido con{' '}<Heart />{' '}por <a href="https://www.waffle.studio" target="_blank" className="has-text-white">Waffle Studio</a></p>
       <p>
         Este sitio esta licenciado bajo <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" className="has-text-grey">CC BY NC SA 4.0</a>.
       </p>
