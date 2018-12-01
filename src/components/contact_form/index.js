@@ -17,7 +17,7 @@ export default class Contact extends Component {
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-  onSubmitForm = (event) => {
+  onSubmitForm = e => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
