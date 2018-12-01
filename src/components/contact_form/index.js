@@ -1,5 +1,10 @@
 import { Component } from 'preact'
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 export default class Contact extends Component {
   state = {
@@ -9,17 +14,17 @@ export default class Contact extends Component {
     message: ''
   }
 
-  handleInputChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    this.setState({[name]: value});
-  }
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
   onSubmitForm = (event) => {
-    this.setState({
-        formSubmitted: true
-    });
-    event.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => this.setState({ formSubmitted: true }))
+      .catch(error => console.log(error));
+    e.preventDefault();
   }
 
   render() {
@@ -31,23 +36,23 @@ export default class Contact extends Component {
             <h4 className="subtitle has-text-white">Pronto te contactaremos.</h4>
           </div>
         ) : (
-          <form name="contact" method="POST" onSubmit={this.submitForm} netlify>
+          <form name="contact" onSubmit={this.submitForm}>
             <div className="field">
               <label className="label has-text-white">Nombre</label>
               <div className="control">
-                <input className="input" type="text" placeholder="Paco Borba" name="name" onChange={this.handleInputChange} required />
+                <input className="input" type="text" placeholder="Paco Borba" name="name" value={this.state.name} onChange={this.handleChange} required />
               </div>
             </div>
             <div className="field">
               <label className="label has-text-white">Correo</label>
               <div className="control">
-                <input className="input" type="email" placeholder="paco@bor.ba" name="email" onChange={this.handleInputChange} required />
+                <input className="input" type="email" placeholder="paco@bor.ba" name="email" value={this.state.email} onChange={this.handleChange} required />
               </div>
             </div>
             <div className="field">
               <label className="label has-text-white">Mensaje</label>
               <div className="control">
-                <textarea className="textarea" placeholder="Hola!" name="message" onChange={this.handleInputChange} required></textarea>
+                <textarea className="textarea" placeholder="Hola!" name="message" value={this.state.message} onChange={this.handleChange} required></textarea>
               </div>
             </div>
             <div data-netlify-recaptcha></div>
