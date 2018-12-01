@@ -45,7 +45,7 @@ const Footer = () => (
   <footer className="footer has-background-black footer-section">
     <div className="content has-text-centered">
       <p className="has-text-white">
-        <strong className="has-text-white">GDG Managua</strong>
+        <strong className="has-text-white">&copy; GDG Managua</strong>
       </p>
       <p> <GitHub />{' '}<Meetup />{' '}<Facebook />{' '}<Twitter /> </p>
       <p className="has-text-white">Construido con{' '}<Heart />{' '}por <a href="https://www.waffle.studio" target="_blank" className="has-text-white">Waffle Studio</a></p>

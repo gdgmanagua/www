@@ -1,4 +1,4 @@
-import NewsletterForm from '../../newsletter'
+import NewsletterForm from '../../newsletter_form'
 
 const Newsletter = () => (
   <section className="section" style="background-color: grey;">
