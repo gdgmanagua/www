@@ -1,5 +1,4 @@
-import { Component } from 'preact'
-import fetch from 'unfetch'
+import { Component } from 'preact';
 
 const encode = (data) => {
   return Object.keys(data)

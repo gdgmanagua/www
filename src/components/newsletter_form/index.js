@@ -1,10 +1,10 @@
-import { Component } from 'preact'
+import { Component } from 'preact';
 
 const encode = (data) => {
   return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&");
-}
+};
 
 export default class NewsletterForm extends Component {
   state = {
@@ -58,4 +58,4 @@ export default class NewsletterForm extends Component {
       </div>
     )
   }
-}
+};
