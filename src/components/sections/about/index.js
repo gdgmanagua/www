@@ -1,5 +1,6 @@
 import { Component } from 'preact';
 import Portal from 'preact-portal';
+import AboutImage from '../../../assets/aboutgdg.jpg';
 
 export default class About extends Component {
   state = {
@@ -17,7 +18,7 @@ export default class About extends Component {
           <div className="columns is-vcentered">
             <div className="column">
               <figure className="image">
-                <img src="https://secure.meetupstatic.com/photos/event/8/8/e/e/600_471995054.jpeg" />
+                <img src={AboutImage} />
               </figure>
             </div>
             <div className="column content">
@@ -27,7 +28,7 @@ export default class About extends Component {
                 desde solo unas pocas personas que se reúnen para ver nuestros últimos videos, grandes reuniones con demostraciones y charlas tecnológicas, y hackathons.</p>
               <p className="has-text-justified">La plataforma <b>GDG</b> es un nivel de membresía dentro del programa más amplio de Grupos de la <i>Comunidad de Desarrolladores de Google</i> y
                 ofrece soporte personalizado para los organizadores de los capítulos locales de GDG.</p>
-              <button className="button is-black is-outlined is-rounded" onClick={this.open}>Ver Más</button>
+              <button className="button is-black is-outlined" onClick={this.open}>Ver Más</button>
             </div>
           </div>
         </div>

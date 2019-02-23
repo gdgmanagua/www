@@ -34,7 +34,7 @@ export default class Event extends Component {
 
   render() {
     return (
-      <section className="section is-paddingless">
+      <section className="section is-paddingless" style="background-color:var(--red); line-height:0;">
         <div className="columns is-gapless">
           <div className="column">
             <div style="width: 100%">
@@ -43,7 +43,7 @@ export default class Event extends Component {
             </div>
           </div>
           <div className="column event">
-            <h1 className="title is-size-1 has-text-black has-text-centered">Proximo Evento</h1>
+            <h1 className="title is-size-1 has-text-black has-text-centered">Próximo Evento</h1>
             <div className="content">
               <ul className="timeline">
                 <li className="timeline--content"><strong>Fecha:</strong>{' '}{this.state.date}</li>

@@ -38,27 +38,24 @@ export default class Contact extends Component {
         ) : (
           <form name="contact" onSubmit={this.onSubmitForm}>
             <div className="field">
-              <label className="label has-text-white">Nombre</label>
               <div className="control">
-                <input className="input" type="text" placeholder="Paco Borba" name="name" value={this.state.name} onChange={this.handleChange} required />
+                <input className="input" type="text" placeholder="Nombre Completo" name="name" value={this.state.name} onChange={this.handleChange} required />
               </div>
             </div>
             <div className="field">
-              <label className="label has-text-white">Correo</label>
               <div className="control">
-                <input className="input" type="email" placeholder="paco@bor.ba" name="email" value={this.state.email} onChange={this.handleChange} required />
+                <input className="input" type="email" placeholder="Correo Electrónico" name="email" value={this.state.email} onChange={this.handleChange} required />
               </div>
             </div>
             <div className="field">
-              <label className="label has-text-white">Mensaje</label>
               <div className="control">
-                <textarea className="textarea" placeholder="Hola!" name="message" value={this.state.message} onChange={this.handleChange} required></textarea>
+                <textarea className="textarea" placeholder="Mensaje" name="message" value={this.state.message} onChange={this.handleChange} required></textarea>
               </div>
             </div>
             <div data-netlify-recaptcha></div>
             <div className="field is-grouped">
               <div className="control">
-                <button className="button is-white is-outlined is-rounded is-medium" type="submit">Enviar</button>
+                <button className="button is-white is-outlined is-medium" type="submit">Enviar</button>
               </div>
             </div>
           </form>

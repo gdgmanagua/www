@@ -22,57 +22,65 @@ const SponsorCard = (props) => (
 const Sponsor = () => (
   <section className="section">
     <div className="container">
-      <h1 className="title is-size-1 has-text-black has-text-centered">Nuestros Patrocinadores</h1>
-      <h2 class="title has-text-centered">Regional</h2>
-      <div className="columns">
-        <div className="column">
-          <SponsorCard
-            name="Google Developers"
-            logo={LogoGDG}
-            websiteUrl="https://developers.google.com/"
-            websiteLabel="developers.google.com" />
-        </div>
-        <div className="column">
-          <SponsorCard
-            name="Women Tech Makers"
-            logo={LogoWTM}
-            websiteUrl="https://www.womentechmakers.com/"
-            websiteLabel="www.womentechmakers.com" />
-        </div>
+      <div>
+        <h3 className={style.section_title}>Nuestros Patrocinadores</h3>
+        <p className="has-text-centered">No somos nada sin nuestros Patrocinadores.</p>
       </div>
-      <hr />
-      <h2 class="title has-text-centered">Local</h2>
-      <div className="columns">
-        <div className="column">
-          <SponsorCard
-            name="Rain Agency"
-            logo={LogoRain}
-            websiteUrl="https://rain.agency/"
-            websiteLabel="rain.agency" />
-        </div>
-        <div className="column">
-          <SponsorCard
-            name="Waffle Studio"
-            logo={LogoWaffle}
-            websiteUrl="https://www.waffle.studio/"
-            websiteLabel="waffle.studio" />
-        </div>
-        <div className="column">
-          <div className={style.sponsor_card}>
-            <header className={style.sponsor_header}>
-              <p className={style.sponsor_header_title}>Conviértete en Sponsor</p>
-            </header>
-            <div className={style.sponsor_content}>
-              <img className={style.sponsor_image} src={LogoDefault} alt={`Logo Default`} />
+      <div>
+        <div className={style.section_row}>
+          <h2 className={style.section_row_title}>Regional</h2>
+          <div className="columns">
+            <div className="column">
+              <SponsorCard
+                name="Google Developers"
+                logo={LogoGDG}
+                websiteUrl="https://developers.google.com/"
+                websiteLabel="developers.google.com" />
             </div>
-            <footer className={style.sponsor_footer}>
-              <a href="#contact" className={style.sponsor_btn}>Quiero ser Sponsor!</a>
-            </footer>
+            <div className="column">
+              <SponsorCard
+                name="Women Tech Makers"
+                logo={LogoWTM}
+                websiteUrl="https://www.womentechmakers.com/"
+                websiteLabel="www.womentechmakers.com" />
+            </div>
+          </div>
+        </div>
+        <div className={style.section_row}>
+          <h2 className={style.section_row_title}>Local</h2>
+          <div className="columns">
+            <div className="column">
+              <SponsorCard
+                name="Rain Agency"
+                logo={LogoRain}
+                websiteUrl="https://rain.agency/"
+                websiteLabel="rain.agency" />
+            </div>
+            <div className="column">
+              <SponsorCard
+                name="Waffle Studio"
+                logo={LogoWaffle}
+                websiteUrl="https://www.waffle.studio/"
+                websiteLabel="waffle.studio" />
+            </div>
+            <div className="column">
+              <div className={style.sponsor_card}>
+                <header className={style.sponsor_header}>
+                  <p className={style.sponsor_header_title}>Conviértete en Sponsor</p>
+                </header>
+                <div className={style.sponsor_content}>
+                  <img className={style.sponsor_image} src={LogoDefault} alt={`Logo Default`} />
+                </div>
+                <footer className={style.sponsor_footer}>
+                  <a href="#contact" className={style.sponsor_btn}>Quiero ser Sponsor!</a>
+                </footer>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section >
 );
 
 export default Sponsor;

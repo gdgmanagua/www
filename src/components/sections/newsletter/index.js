@@ -1,10 +1,9 @@
 import NewsletterForm from '../../newsletter_form'
 
 const Newsletter = () => (
-  <section className="section" style="background-color: grey;">
+  <section className="section" style="background-color: #0088fb;">
     <div className="container">
-      <h1 className="title is-size-1 has-text-white has-text-centered">Suscribete a nuestra lista</h1>
-      <h2 className="title has-text-white has-text-centered">para estar al tanto</h2>
+      <h1 className="title is-size-1 has-text-white has-text-centered">Suscríbete!</h1>
       <NewsletterForm />
     </div>
   </section>
