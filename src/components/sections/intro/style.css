@@ -25,8 +25,8 @@
   }
   .hero_wrap::after {
     content: "";
-    background: -webkit-linear-gradient(#ff6471, #1b96ed), top;
-    background: linear-gradient(#ff6471, #1b96ed), top;
+    background: -webkit-linear-gradient(#4889f8, #0d5080), top;
+    background: linear-gradient(#4889f8, #0d5080), top;
     position: absolute;
     left: 0;
     right: 0;

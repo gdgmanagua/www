@@ -15,7 +15,6 @@ const App = () => (
     <About />
     <Newsletter />
     <Sponsor />
-    <Comment />
     <Event />
     <Social />
     <Contact />

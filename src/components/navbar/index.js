@@ -78,7 +78,7 @@ export default class NavBar extends Component {
               <a className={`navbar-item ${textColor}`} href="#event">Eventos</a>
               <a className={`navbar-item ${textColor}`} href="#contact">Contacto</a>
               <div className="navbar-item">
-                <a className={`button ${buttonColor} is-outlined is-rounded`} href="#" data-view="#about" onClick={this.doScrollIntoView}>Únete</a>
+                <a className={`button ${buttonColor} is-outlined`} href="#" data-view="#about" onClick={this.doScrollIntoView}>Únete</a>
               </div>
             </div>
           </div>

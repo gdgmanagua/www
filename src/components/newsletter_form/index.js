@@ -28,7 +28,7 @@ export default class NewsletterForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="mt-40">
         { this.state.formSubmitted ? (
             <div>
               <h3 className="title has-text-white has-text-centered">Gracias!</h3>
@@ -49,7 +49,7 @@ export default class NewsletterForm extends Component {
                   </p>
                 </div>
                 <div className="field">
-                  <button type="submit" className="button is-white is-outlined is-rounded">Suscribir!</button>
+                  <button type="submit" className="button is-white is-outlined">Suscribir!</button>
                 </div>
               </div>
             </div>

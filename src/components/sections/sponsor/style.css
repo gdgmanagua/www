@@ -1,5 +1,26 @@
+.section_title {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.section_row {
+  margin: 30px 0;
+}
+
+.section_row_title {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
 .sponsor_card {
-  box-shadow: 0 8px 30px rgba(33, 54, 61, 0.15);
+  box-shadow: 0 8px 20px rgba(33, 54, 61, 0.15);
 }
 
 .sponsor_header {
@@ -21,13 +42,13 @@
 }
 
 .sponsor_image {
-  max-width: 320px;
+  max-width: 190px;
 }
 
 .sponsor_footer {
   font-size: 12px;
   letter-spacing: 0.12rem;
-  padding: 7px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
 }
@@ -40,7 +61,6 @@
   display: inline-flex;
   text-align: center;
   padding: 7px 10px;
-  border-radius: 40px;
   background: #4f8bf8;
   color: #fff;
 }

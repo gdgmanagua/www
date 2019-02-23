@@ -5,7 +5,7 @@ const Contact = () => (
     <div className="columns is-gapless">
       <div className="column">
         <div className="contact_form">
-          <h1 className="title is-size-1 has-text-white">Contactanos</h1>
+          <h1 className="title is-size-1 has-text-white">Contáctanos</h1>
           <ContactForm />
         </div>
       </div>
